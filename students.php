@@ -34,6 +34,7 @@ if ($result -> num_rows > 0 ){
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
 </head>
 <body>
+<?php include("nav.php"); ?>
 <section>
     <div class="container">
         <h1>Students List</h1>
@@ -62,5 +63,6 @@ if ($result -> num_rows > 0 ){
         </table>
     </div>
 </section>
+<?php include("footer.php"); ?>
 </body>
 </html>
