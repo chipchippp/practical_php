@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <form action="/postCreate.php" method="post">
+                <form action="postCreate.php" method="post">
                     <div class="mb-3">
                         <label>Students Name</label>
                         <input type="text" name="name" class="form-control" required/>
@@ -42,14 +42,14 @@
                     </div>
                     <div class="mb-3">
                         <label>Students Telephone</label>
-                        <input type="text" name="tel" class="form-control" required/>
+                        <input type="text" name="telephone" class="form-control" required/>
                     </div>
                     <div class="row mb-3">
                         <div class="offset-sm-3 col-sm-3 d-grid">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                         <div class="col-sm-3 d-grid">
-                            <a href="/students.php" class="btn btn-outline-primary" role="button">Cancel</a>
+                            <a href="students.php" class="btn btn-outline-primary" role="button">Cancel</a>
                         </div>
                     </div>
                 </form>

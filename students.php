@@ -1,20 +1,12 @@
 <?php
-$host = "localhost";
-$dbname = "practical_php";
-$dbuser = "root";
-$dbpass = "";
-
-$conn = new mysqli($host, $dbuser ,$dbpass,  $dbname );
-if ($conn -> connect_error){
-die("Connection refused!");
-}
-
+require "db.php";
+$conn = connect();
 $sql = "select * from students";
 $result = $conn->query($sql);
 $students = [];
 if ($result -> num_rows > 0 ){
     while($row = $result->fetch_assoc()){
-        $products[] = $row;
+        $students[] = $row;
     }
 }
 ?>
